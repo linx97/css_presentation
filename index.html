@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colors, Gradients, Box-Shadow, Background-Image</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="center2">
+		<h1>Colors</h1>
+		<p>There are 6 different methods of specifying colors in CSS.</p>
+		<p class="bold">Hexadecimal</p>
+		<p class="bold">RGB</p>
+		<p class="bold">RGBA</p>
+		<p class="bold">HSL</p>
+		<p class="bold">HSLA</p>
+		<p class="bold">Predefined/Cross-Browser Color Names</p>
+		<hr>
+		<h3>Best Practices</h3>
+		<p>Named colors are also known as keyword colors, X11 colors, or SVG colors. All named colors are opaque by default except transparent, which is fully transparent or "clear". See our Named Colors and Hex Equivalents snippet for <a href="https://css-tricks.com/almanac/properties/c/color/">a list of the named colors.</a></p>
+	</div>
+	<h3>Examples:</h3>
+	<table>
+		<tbody>
+			<tr>
+				<td class="bold">Type</td>
+				<td class="bold">Syntax</td>
+				<td class="bold">Display</td>
+				<td class="bold">How it Works</td>
+			</tr>
+			<tr>
+				<td class="bold">Hexidecimal</td>
+				<td>#AF71D1</td>
+				<td class="hex"></td>
+				<td>
+					A hexadecimal color is specified with: #RRGGBB. RR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color.
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">RGB</td>
+				<td>rgb(90, 191, 209)</td>
+				<td class="rgb"></td>
+				<td>
+					An RGB color value is specified with: rgb(red, green, blue). Each parameter (red, green, and blue) defines the intensity of the color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">RGBA</td>
+				<td>rgb(90, 191, 209, .3)</td>
+				<td class="rgba"></td>
+				<td>
+					RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the object. An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">HSL</td>
+				<td>hsl(343, 90%, 25%)</td>
+				<td class="hsl"></td>
+				<td>
+					HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of colors. An HSL color value is specified with: hsl(hue, saturation, lightness). Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">HSLA</td>
+                <td>hsla(120, 100%, 75%, 0.3);</td>
+                <td class="hsla"></td>
+                <td>
+                	An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+                </td>
+			</tr>
+			<tr>
+				<td class="bold">Predefined/Cross-browser Color Names</td>
+                <td>lightsalmon</td>
+                <td class="pre"></td>
+                <td>
+                	140 color names are predefined in the HTML and CSS color specification. Look at the table of <a href="http://www.w3schools.com/colors/colors_names.asp"> predefined color names.</a> 
+                </td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="center">
+		<h1>Gradients</h1>
+		<p>CSS3 gradients let you display smooth transitions between two or more specified colors. CSS3 defines two types of gradients:</p>
+		<p class="bold">Linear Gradients (goes down/up/left/right/diagonally)</p>
+		<p class="bold">Radial Gradients (defined by their center)</p>
+		<hr>
+		<h3>Best Practices</h3>
+		<p>AThe gradients "axis" can go from left-to-right, top-to-bottom, or at any angle you chose. Not declaring an angle will assume top-to-bottom: <a href="https://css-tricks.com/css3-gradients/">https://css-tricks.com/css3-gradients/</a></p>
+	</div>
+	<h3>Examples:</h3>
+	<table>
+		<tbody>
+			<tr>
+				<td class="bold">Type</td>
+				<td class="bold">Syntax</td>
+				<td class="bold">Display</td>
+				<td class="bold">How it Works</td>
+			</tr>
+			<tr>
+				<td class="bold">Linear Gradients</td>
+               <td>background: linear-gradient(red, yellow);</td>
+               <td class="linear"></td>
+               <td>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+
+			</tr>
+			<tr>
+				<td class="bold">Radial Gradients</td>
+               <td>background: radial-gradient(red, yellow, green);</td>
+               <td class="radial"></td>
+               <td>By default, shape is ellipse, size is farthest-corner, and position is center.
+               </td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="center">
+		<h1>Box-Shadow</h1>
+		<p>The box-shadow property attaches one or more shadows to an element. </p>
+		<hr>
+		<h3>Best Practices</h3>
+		<p>You can comma separate box-shadow as many times as you like. For instance, this shows two shadows with different positions and different colors on the same element: <a href="https://css-tricks.com/almanac/properties/b/box-shadow/">https://css-tricks.com/almanac/properties/b/box-shadow/</a></p>
+		</div>
+		<h3>Example:</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td class="bold">Type</td>
+					<td class="bold">Syntax</td>
+					<td class="bold">Display</td>
+					<td class="bold">How it Works</td>
+				</tr>
+				<tr>
+					<td>Box-Shadow</td>
+	               <td>box-shadow: 10px 10px</td>
+	               <td class="box"></td>
+	               <td>The property is a comma-separated list of shadows, each specified by 2-4 length values, an optional color, and an optional inset keyword. Omitted lengths are 0.  See <a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp"> property values table. In its simplest use, you only specify the horizontal shadow and the vertical shadow</td>
+               <tr>
+			</tbody>
+		</table>
+
+	<div class="center">
+		<h1>Background-Image</h1>
+		<p>The background-image property sets one or more background images for an element.</p>
+
+		<p>The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+
+		<p>By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</p>
+		<hr>
+		<h3>Best Practices</h3>
+		<p>Always set a background-color to be used if the image is unavailable.</p>
+
+	</div>
+	<h3>Example:</h3>
+	<table>
+			<tbody>
+				<tr>
+					<td class="bold">Type</td>
+					<td class="bold">Syntax</td>
+					<td class="bold">Display</td>
+
+				</tr>
+				<tr>
+					<td>Background-Image</td>
+	               <td>background-image: url("img_tree.gif")</td>
+	               <td class="back"><p style="font-size: 3em; padding-left: 50px;">SPACE</p></td>
+               <tr>
+			</tbody>
+	</table>
+
+</body>
+</html>

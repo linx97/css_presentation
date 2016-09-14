@@ -1,0 +1,97 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: verdana;
+	padding: 30px;
+}
+
+.hex {
+	background-color: #AF71D1;
+}
+
+.rgb {
+	background-color: rgb(90, 191, 209);
+}
+
+.rgba {
+	background-color: rgba(90, 191, 209, .3);
+}
+
+.hsl {
+	background-color: hsl(120, 60%, 65%);
+}
+
+.hsla {
+	background-color: hsla(120, 100%, 75%, 0.3);
+}
+
+.pre {
+	background-color: lightsalmon;
+}
+
+.center {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.linear {
+	background: linear-gradient(red, yellow);
+}
+
+.radial {
+	background: radial-gradient(red, yellow, green);
+}
+
+.box {
+	box-shadow: 10px 10px;
+}
+
+.back {
+	background-image: url("http://weknowyourdreams.com/images/space/space-05.jpg");
+	height: 200px;
+	background-size: cover;
+}
+
+.center2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+table {
+	border: 2px solid white;
+}
+
+td {
+	padding: 5px;
+	border: 1px solid white;
+}
+
+td:nth-child(1) {
+	width: 20%;
+}
+
+td:nth-child(3) {
+	width: 20%;
+}
+
+td:nth-child(4) {
+	width: 40%;
+}
+td:nth-child(2) {
+	width: 20%;
+}
+
+hr {
+	width: 60%;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+h1 {
+	font-size: 3em;
+}
